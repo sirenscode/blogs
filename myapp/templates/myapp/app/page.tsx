@@ -3,7 +3,6 @@
 import axios from "axios";
 import { useEffect } from "react";
 import NavBar from "./components/navbar";
-import SearchComp from "./components/search";
 import MainCard from "./components/MainCard";
 
 export default function Home() {
@@ -34,7 +33,6 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">
       <NavBar/>
-      <SearchComp/>
       <MainCard/>
     </main>
   );

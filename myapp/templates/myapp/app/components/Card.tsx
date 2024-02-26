@@ -23,7 +23,7 @@ const Card: React.FC<CardProps> = (props) =>{
     return(
         <div className="w-1/2 flex flex-row items-center gap-[10px] max-[500px]:w-full">
             <div className="flex flex-col items-center mb-[auto]">
-                <div className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat rounded-full max-[500px]:h-[40px] w-[40px]" style={{backgroundImage:`url("${profile_url}")`}}>
+                <div className="w-[50px] h-[50px] bg-cover bg-center bg-no-repeat rounded-full" style={{backgroundImage:`url("${profile_url}")`}}>
                 </div>
                 <h2 className="font-bold text-[1.5em] max-[500px]:text-[1.2em]">26</h2>
                 <div className="flex flex-col gap-[10px] items-center">
@@ -33,7 +33,7 @@ const Card: React.FC<CardProps> = (props) =>{
                 </div>
                 
             </div>
-            <div className="bg-[#fff] w-3/4 rounded-[20px] flex flex-col items-center shadow-[#676767] shadow-lg p-[20px] max-[500px]:w-full">
+            <div className="bg-[#fff] w-3/4 rounded-[20px] flex flex-col items-center shadow-[#676767] shadow-lg p-[20px] cursor-pointer duration-500 transition-transform hover:scale-105 max-[500px]:w-full">
                 <h1 className="font-semibold ">{title}</h1>
                 <div className={"mt-[20px] rounded-[10px] shadow-[#676767] shadow-lg h-[250px] w-full bg-cover bg-no-repeat bg-center"} style={{backgroundImage:`url("${imageUrl})`}}></div>
                 <p className="text-[rgba(0,0,0,0.7)] p-[20px] text-[.8em]">{content}</p>

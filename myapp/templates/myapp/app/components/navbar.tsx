@@ -1,14 +1,14 @@
 const NavBar: React.FC = () =>{
     return(
-        <div id="navbar" className="fixed w-full top-0 bg-[rgba(255,255,255,0.5)] shadow-[rgba(200,200,200,1)] shadow-lg flex flex-row p-[10px] items-center">
-            <h1>GlobalSpace</h1>
-            <div className="flex flex-row gap-[10px] text-[.8em] ml-[auto]">
-                <a href="#news">NEWS</a>
-                <a href="#news">VIDEOS</a>
-                <a href="#news">PODCAST</a>
+        <div id="navbar" className="fixed w-full top-0 bg-[rgba(255,255,255,0.5)] shadow-[rgba(200,200,200,1)] shadow-lg flex flex-row p-[10px] items-center z-[50]">
+            <h1 className="font-bold">Global<span className="text-[#7E51FF]">Space</span></h1>
+            <div className="flex flex-row gap-[10px] text-[.8em] ml-[auto] max-[500px]:hidden">
+                <a className="navlink " href="#news">NEWS</a>
+                <a className="navlink" href="#news">VIDEOS</a>
+                <a className="navlink" href="#news">PODCAST</a>
             </div>
             <div className="ml-[auto]">
-                <div className="w-[200px] flex">
+                <div className="w-[200px] flex max-[500px]:w-[30px]">
                     <div className="w-full flex flex-row border-[1px] border-[#eee] rounded-[6px] p-1 bg-[rgba(255,255,255,0.5)]">
                         <input 
                         type="text" 

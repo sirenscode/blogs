@@ -20,11 +20,37 @@ input,textarea{
 }
 body{
   background-color: #F0F1F6;
+  font-family: "Roboto";
 }
-#navbar{
-  transition: 1s background ease-in-out;
+.navlink:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #7E51FF;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.navlink:hover:after { transform: scaleX(1); }
+#navbar,button{
+  transition: 0.5s background ease-in-out;
 }
 
+.border {
+  display: block;
+  position: relative;
+  height: 3px;
+  width: 100%;
+  background: #7E51FF;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin:  50% 50%;
+}
+
+input:focus + .border, .expand:focus .border {
+  transform: scaleX(1);
+}
+textarea:focus + .border, .expand:focus .border {
+  transform: scaleX(1);
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
