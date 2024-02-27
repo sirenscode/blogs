@@ -27,12 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
-    "172.16.60.160"
+    "172.16.60.160",
+    "vercel.app"
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://172.16.60.160:3000",
+    "https://blogs-tech-one.vercel.app",
     "http://localhost:3000",# Add the origin of your React app
 ]
 # Application definition

@@ -1,7 +1,7 @@
 const NavBar: React.FC = () =>{
     return(
         <div id="navbar" className="fixed w-full top-0 bg-[rgba(255,255,255,0.5)] shadow-[rgba(200,200,200,1)] shadow-lg flex flex-row p-[10px] items-center z-[50]">
-            <h1 className="font-bold">Global<span className="text-[#7E51FF]">Space</span></h1>
+            <a href="/" className="font-bold">Global<span className="text-[#7E51FF]">Space</span></a>
             <div className="flex flex-row gap-[10px] text-[.8em] ml-[auto] max-[500px]:hidden">
                 <a className="navlink " href="#news">NEWS</a>
                 <a className="navlink" href="#news">VIDEOS</a>

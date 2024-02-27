@@ -11,8 +11,8 @@
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "blog/wsgi.py"
+        "src": "/myapp/templates/myapp/(.*)",
+        "dest": "/blog/wsgi.py"
       }
     ]
   }
