@@ -27,13 +27,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     '0.0.0.0',
-    "localhost",
-    "192.168.137.75"
+    "172.16.60.160"
 ]
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-    "http://192.168.137.75:3000",
+    "http://172.16.60.160:3000",
     "http://localhost:3000",# Add the origin of your React app
 ]
 # Application definition

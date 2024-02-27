@@ -31,7 +31,7 @@ const Post: React.FC = () =>{
             <NavBar/>
             <form className="w-full h-[100vh] flex flex-col   items-center justify-center gap-[20px]" onSubmit={handleSubmit}>
                 <h1 className="font-semibold text-[2em]">Post a Blog</h1>
-                <div className="w-1/3 flex flex-col items-center gap-[20px] shadow-[#7E51FF] shadow-lg bg-[rgba(255,255,255,0.5)] p-3 rounded-[10px] shadow-lg shadow-[#7E51FF]">
+                <div className="w-1/3 flex flex-col items-center gap-[20px] shadow-[#7E51FF] shadow-lg bg-[rgba(255,255,255,0.5)] p-3 rounded-[10px] shadow-lg shadow-[#7E51FF] max-[500px]:w-3/4">
                     <div className="w-full flex flex-col gap-[10px]">
                         <div>
                             <input type="text" id="title" placeholder="Enter title" className="w-full border-1 border-[#eee] p-1 rounded-[6px] text-center"/>

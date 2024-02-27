@@ -6,7 +6,7 @@ const MainCard: React.FC = () =>{
     const [blogs, setBlogs] = useState([]);
 
     useEffect(()=>{
-        axios.get("http://192.168.137.75:8000/blog/api/posts/")
+        axios.get("http://172.16.60.160:8000/blog/api/posts/")
         .then(response=>{
             setBlogs(response.data)
         });
